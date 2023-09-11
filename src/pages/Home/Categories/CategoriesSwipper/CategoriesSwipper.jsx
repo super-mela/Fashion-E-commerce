@@ -16,16 +16,18 @@ const CategoriesSwipper = ({
   },
 }) => {
   return (
-    <div className="my-5 swiper-container">
-      <div className="grid lg:grid-cols-3 gap-5 my-10">
-        {categories.map((category) => (
-          <SwiperSlide key={category._id}>
-            <CategoriesCard
-              categories={categories}
-              category={category}
-            ></CategoriesCard>
-          </SwiperSlide>
-        ))}
+    <div className="my-10 lg:px-18">
+      <div className="w-full text-secondary">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-5 my-10">
+          {categories.map((category) => (
+            <SwiperSlide key={category._id}>
+              <CategoriesCard
+                categories={categories}
+                category={category}
+              ></CategoriesCard>
+            </SwiperSlide>
+          ))}
+        </div>
       </div>
       {/* <Swiper
         breakpoints={{

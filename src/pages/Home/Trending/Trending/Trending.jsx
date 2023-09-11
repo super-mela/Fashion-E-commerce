@@ -29,7 +29,7 @@ const Trending = () => {
             style={{ backgroundImage: `url(${bg})` }}
         >
             <Title>Trending Products</Title>
-            <div className="grid lg:grid-cols-4 gap-5 my-10">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 my-10">
                 {products?.map((product) => (
                     <TrendingCard
                         key={product._id}

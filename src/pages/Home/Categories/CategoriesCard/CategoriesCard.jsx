@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CategoriesCard = ({ category: { categoryName, desc, img, _id } }) => {
   return (
-    <div className="text-neutral font-urbanist grid grid-cols-5 bg-white rounded-sm gap-1 border lg:w-[420px] w-[350px] h-[250px]">
+    <div className="text-neutral font-urbanist grid grid-cols-5 bg-white rounded-sm gap-1 border w-[420px] lg:w-[400px] md:w-[370px] sm:w-[350px] h-[250px]">
       <figure className="col-span-2">
         <img
           src={img}
